@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    %title MediaCollection
+    %meta{ charset: 'utf-8' }
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    .container
+      .row
+        = render 'application/navigation'
+        .col-lg-12
+          = flash_notice
+        = yield

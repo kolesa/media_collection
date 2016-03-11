@@ -1,0 +1,47 @@
+ru:
+  errors:
+    messages:
+      url: не является допустимым URL
+  sign_out: Выйти
+  sign_in: Войти
+  sign_up: Регистрация
+  button_add: "Добавить %{object_name}"
+  show: Просмотреть
+  destroy: Удалить
+  back: Назад
+  available_collection: Доступные коллекции
+  not_have_collection: Нет доступных колекций
+  title:
+    new: "Новая %{object_name}"
+  confirmations:
+    are_you_sure: 'Вы уверены?'
+  flash:
+    notice:
+      on_create: Создание прошло успешно.
+      on_destroy: Удаление прошло успешно.
+  collections:
+    accusative: коллекцию
+    plural: коллекции
+  images:
+    accusative: изображение
+    plural: изображения
+  links:
+    accusative: ссылку
+    plural: ссылки
+  activerecord:
+    models:
+      collection: коллекция
+      image: изображение
+      link: ссылка
+    attributes:
+      collection:
+        name: Название
+        share: Поделиться
+      image:
+        name: Название
+        image: Картинка
+        collection_id: Коллекция
+      link:
+        name: Название
+        link: Ссылка
+        collection_id: Коллекция

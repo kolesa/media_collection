@@ -1,0 +1,7 @@
+= form_for @image, builder: MainFormBuilder do |f|
+
+  = f.text_field_bootstrap :name
+  = f.image_field_bootstrap :image
+  = f.select_field_bootstrap :collection_id, Collection.for_select(current_user), {}
+
+  = f.main_submit

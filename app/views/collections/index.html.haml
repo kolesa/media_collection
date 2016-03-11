@@ -1,0 +1,21 @@
+%h1= t('collections.plural')
+
+%table.table.table-striped
+  %tr
+    %th= Collection.human_attribute_name('name')
+    %th= Collection.human_attribute_name('share')
+    %th
+    %th
+
+  - @collections.each do |collection|
+    %tr
+      %td= collection.name
+      %td= collection.share
+      %td= link_to t('show'), collection
+      %td= link_to t('destroy'), collection, method: :delete, data: { confirm: t('confirmations.are_you_sure') }
+
+%br
+
+= link_to t('button_add', object_name: t('collections.accusative')), new_collection_path, class: 'btn btn-success'
+= link_to t('button_add', object_name: t('images.accusative')), new_image_path, class: 'btn btn-success'
+= link_to t('button_add', object_name: t('links.accusative')), new_link_path, class: 'btn btn-success'

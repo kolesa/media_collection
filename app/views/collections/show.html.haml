@@ -1,0 +1,9 @@
+- @collection.images.each do |image|
+  = image_tag image.image.thumb, class: 'img-thumbnail'
+  %br
+
+- @collection.links.each do |link|
+  = link_to link.name, link.link
+  %br
+
+= link_to t('back'), collections_path

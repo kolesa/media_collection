@@ -1,0 +1,11 @@
+%nav.navbar.navbar-default
+  .container-fluid
+    .navbar-header
+      = link_to 'MediaCollection', :root, class: 'navbar-brand'
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      %ul.nav.navbar-nav
+        - if user_signed_in?
+          %li.active
+            = link_to t('collections.plural'), collections_path
+      = render 'user_navigation'
+

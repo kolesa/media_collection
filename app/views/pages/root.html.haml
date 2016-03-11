@@ -1,0 +1,7 @@
+- if @collections.present?
+  %h2= t('available_collection')
+  - @collections.each do |collection|
+    = link_to collection.name, collection
+    %br
+- else
+  %h2= t('not_have_collection')

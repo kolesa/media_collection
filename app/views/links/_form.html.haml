@@ -1,0 +1,6 @@
+= form_for @link, builder: MainFormBuilder do |f|
+  = f.text_field_bootstrap :name
+  = f.text_field_bootstrap :link
+  = f.select_field_bootstrap :collection_id, Collection.for_select(current_user), {}
+
+  = f.main_submit

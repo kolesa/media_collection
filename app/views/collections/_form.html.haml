@@ -1,0 +1,6 @@
+= form_for @collection, builder: MainFormBuilder do |f|
+
+  = f.text_field_bootstrap :name
+  = f.check_box_bootstrap :share
+
+  = f.main_submit
